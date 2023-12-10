@@ -13,6 +13,12 @@
   display: inline-block;
  }
 
+ .select {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; /* Adjust as needed */
+ }
+ 
 
 .social-item img {
   width: 40px;
