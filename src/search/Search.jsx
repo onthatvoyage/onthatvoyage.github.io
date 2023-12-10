@@ -7,7 +7,7 @@ function Search(){
    const [options, setOptions] = useState([]);
 
    useEffect(() => {
-    fetch('src/assets/cafes.json')
+    fetch('./assets/cafes.json')
       .then(response => response.json())
       .then(data => {
         setData(data);
