@@ -1,9 +1,5 @@
 import { Card, CardContent, Typography } from '@mui/material';
-import cafes from '../assets/cafes.json'
-import React, { useState } from 'react';
-
-
-
+import cafes from '../assets/cafes.json';
 
 const CardContainer = () => {
     return (
@@ -43,7 +39,7 @@ const CardContainer = () => {
               </div> 
               <div className="card-social">
  <a href={maps} className="social-item maps">
-   <img src="../assets/maps.png" alt="Maps" />
+   <img src="/assets/maps.png" alt="Maps" />
    
  </a>
 </div>
