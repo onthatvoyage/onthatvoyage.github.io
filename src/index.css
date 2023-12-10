@@ -27,11 +27,12 @@ html * {
  }
 
  .label {
-  color: white;
+  color: grey;
  }
  
  .value {
-  color: grey;
+  
+  color: white;
  }
  
  html {
