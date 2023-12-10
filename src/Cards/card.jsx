@@ -1,5 +1,6 @@
 import { Card, CardContent, Typography } from '@mui/material';
 import cafes from '../assets/cafes.json';
+import map from './assets/map.png';
 
 const CardContainer = () => {
     return (
@@ -39,7 +40,7 @@ const CardContainer = () => {
               </div> 
               <div className="card-social">
  <a href={maps} className="social-item maps">
-   <img src="./assets/maps.png" alt="Maps" />
+ <img src={map} alt="Maps" />
    
  </a>
 </div>
