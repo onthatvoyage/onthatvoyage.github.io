@@ -43,7 +43,7 @@ const CardContainer = () => {
               </div> 
               <div className="card-social">
  <a href={maps} className="social-item maps">
-   <img src="src/assets/maps.png" alt="Maps" />
+   <img src="../assets/maps.png" alt="Maps" />
    
  </a>
 </div>
