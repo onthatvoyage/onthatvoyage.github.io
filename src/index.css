@@ -1,7 +1,7 @@
 
 .card {
   flex: unset;
-  width: 330px;
+  width: 300px;
   margin: 20px;
   border-top: 2px #fffafa solid;
   border-bottom: 2px #faf3f3 solid;
@@ -9,6 +9,38 @@
   border-left: 2px #fafafa solid;
 }
 
+.social-item, .social-item-insta {
+  display: inline-block;
+ }
+
+
+.social-item img {
+  width: 40px;
+  height: 40px;
+ }
+
+ .social-item-insta img {
+  width: 50px;
+  height: 50px;
+ }
+
+ .card-social {
+  padding-left: 28px;
+  padding-right: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ 
+ .social-item-insta {
+  order: -1;
+ }
+
+ .social-item img, .social-item-insta img {
+  margin: 10px;
+ }
+ 
 @font-face {
   font-family: 'Mabry Pro';
   src: local('Mabry Pro'), url(./fonts/MabryPro-Light.woff) format('woff');
@@ -74,6 +106,6 @@ html * {
   color: #fcfcfc;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10rem;
+  gap: 3rem;
  }
  

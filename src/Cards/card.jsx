@@ -1,6 +1,8 @@
 import { Card, CardContent, Typography } from '@mui/material';
 import cafes from '../assets/cafes.json';
 import map from '../assets/map.png';
+import insta from '../assets/instagram.png';
+
 
 const CardContainer = () => {
     return (
@@ -22,10 +24,10 @@ const CardContainer = () => {
       </div>
     );
    };
+
+
+
    
-
-
-
    const CardHeader = ({ cafeName, city, countryCode, maps }) => {
       return (
           <div className="card-header">
@@ -41,8 +43,10 @@ const CardContainer = () => {
               <div className="card-social">
  <a href={maps} className="social-item maps">
  <img src={map} alt="Maps" />
-   
- </a>
+</a>
+<a href="instagram.com" className='social-item-insta'>
+  <img src={insta} alt="Insta" />
+</a>
 </div>
 
           </div>
