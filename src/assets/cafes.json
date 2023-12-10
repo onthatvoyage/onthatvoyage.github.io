@@ -5,64 +5,46 @@
         "quietness": "Moderate",
         "brightness": "Good",
         "seating": "Comfortable",
-        "cafeName": "Vader Kleinjan Café",
+        "cafeName": "HEILIGE BOONTJES",
         "city": "London",
         "countryCode": "NL",
-        "maps": "https://www.google.com/maps?saddr&daddr=Spaansepoort+73,+3011+MN+Rotterdam+Nederland@51.91959,4.49251"
+        "maps": "https://maps.app.goo.gl/nSANXov8k2pNcKAb7",
+        "instagram": "http://www.heiligeboontjes.com/"
     },
-    {
+       {
         "powerOutlets": 10,
         "internetSpeed": "High",
         "quietness": "Moderate",
         "brightness": "Good",
         "seating": "Comfortable",
-        "cafeName": "Vader Kleinjan Café",
-        "city": "Paris",
+        "cafeName": "HEILIGE BOONTJES",
+        "city": "London",
         "countryCode": "NL",
-        "maps": "https://www.google.com/maps?saddr&daddr=Spaansepoort+73,+3011+MN+Rotterdam+Nederland@51.91959,4.49251"
+        "maps": "https://maps.app.goo.gl/nSANXov8k2pNcKAb7",
+        "instagram": "http://www.heiligeboontjes.com/"
     },
-    {
-        "powerOutlets": 5,
-        "internetSpeed": "Low",
-        "quietness": "High",
-        "brightness": "Poor",
-        "seating": "Basic",
-        "cafeName": "Pinch",
-        "city": "Berlin",
-        "countryCode": "DE",
-        "maps": "https://www.google.com/maps?saddr&daddr=Gabriele-Tergit-Promenade+21+(Eingang+%C3%BCber+K%C3%B6thenerstr),+10963+Berlijn+Duitsland@52.503735,13.375089"
+       {
+        "powerOutlets": 10,
+        "internetSpeed": "High",
+        "quietness": "Moderate",
+        "brightness": "Good",
+        "seating": "Comfortable",
+        "cafeName": "HEILIGE BOONTJES",
+        "city": "London",
+        "countryCode": "NL",
+        "maps": "https://maps.app.goo.gl/nSANXov8k2pNcKAb7",
+        "instagram": "http://www.heiligeboontjes.com/"
     },
-    {
-        "powerOutlets": 5,
-        "internetSpeed": "Low",
-        "quietness": "High",
-        "brightness": "Poor",
-        "seating": "Basic",
-        "cafeName": "Pinch",
-        "city": "Berlin",
-        "countryCode": "DE",
-        "maps": "https://www.google.com/maps?saddr&daddr=Gabriele-Tergit-Promenade+21+(Eingang+%C3%BCber+K%C3%B6thenerstr),+10963+Berlijn+Duitsland@52.503735,13.375089"
-    },
-    {
-        "powerOutlets": 5,
-        "internetSpeed": "Low",
-        "quietness": "High",
-        "brightness": "Poor",
-        "seating": "Basic",
-        "cafeName": "Pinch",
-        "city": "Berlin",
-        "countryCode": "DE",
-        "maps": "https://www.google.com/maps?saddr&daddr=Gabriele-Tergit-Promenade+21+(Eingang+%C3%BCber+K%C3%B6thenerstr),+10963+Berlijn+Duitsland@52.503735,13.375089"
-    },
-    {
-        "powerOutlets": 5,
-        "internetSpeed": "Low",
-        "quietness": "High",
-        "brightness": "Poor",
-        "seating": "Basic",
-        "cafeName": "Pinch",
-        "city": "Berlin",
-        "countryCode": "DE",
-        "maps": "https://www.google.com/maps?saddr&daddr=Gabriele-Tergit-Promenade+21+(Eingang+%C3%BCber+K%C3%B6thenerstr),+10963+Berlijn+Duitsland@52.503735,13.375089"
+       {
+        "powerOutlets": 10,
+        "internetSpeed": "High",
+        "quietness": "Moderate",
+        "brightness": "Good",
+        "seating": "Comfortable",
+        "cafeName": "HEILIGE BOONTJES",
+        "city": "London",
+        "countryCode": "NL",
+        "maps": "https://maps.app.goo.gl/nSANXov8k2pNcKAb7",
+        "instagram": "http://www.heiligeboontjes.com/"
     }
 ]

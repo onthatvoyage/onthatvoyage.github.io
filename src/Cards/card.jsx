@@ -19,16 +19,15 @@ const CardContainer = () => {
             city={cafe.city}
             countryCode={cafe.countryCode}
             maps={cafe.maps}
+            instagram={cafe.instagram}
           />
         ))}
       </div>
     );
    };
 
-
-
    
-   const CardHeader = ({ cafeName, city, countryCode, maps }) => {
+   const CardHeader = ({ cafeName, city, countryCode, maps, instagram }) => {
       return (
           <div className="card-header">
               <h2>{cafeName}</h2>
@@ -44,8 +43,8 @@ const CardContainer = () => {
  <a href={maps} className="social-item maps">
  <img src={map} alt="Maps" />
 </a>
-<a href="instagram.com" className='social-item-insta'>
-  <img src={insta} alt="Insta" />
+<a href={instagram} className='social-item-insta'>
+  <img src={insta} alt="Instagram" />
 </a>
 </div>
 
@@ -57,11 +56,11 @@ const CardContainer = () => {
 
 
 
-function CafeCard ({ powerOutlets, internetSpeed, quietness, brightness, seating, cafeName, city, countryCode, maps }){
+function CafeCard ({ powerOutlets, internetSpeed, quietness, brightness, seating, cafeName, city, countryCode, maps, instagram }){
     return (
         <div className='card' style={{ color: 'white' }}>
             <Card className="cafe-card">
-            <CardHeader cafeName={cafeName} city={city} countryCode={countryCode} maps={maps} />
+            <CardHeader cafeName={cafeName} city={city} countryCode={countryCode} maps={maps} instagram={instagram} />
           <CardContent>
           <Typography variant="body1" component="p">
             <span className="label">Power Outlets :</span>
