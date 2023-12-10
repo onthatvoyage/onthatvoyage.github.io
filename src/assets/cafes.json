@@ -42,5 +42,16 @@
         "city": "Berlin",
         "countryCode": "DE",
         "maps": "https://www.google.com/maps?saddr&daddr=Gabriele-Tergit-Promenade+21+(Eingang+%C3%BCber+K%C3%B6thenerstr),+10963+Berlijn+Duitsland@52.503735,13.375089"
+    },
+    {
+        "powerOutlets": 5,
+        "internetSpeed": "Low",
+        "quietness": "High",
+        "brightness": "Poor",
+        "seating": "Basic",
+        "cafeName": "Pinch",
+        "city": "Berlin",
+        "countryCode": "DE",
+        "maps": "https://www.google.com/maps?saddr&daddr=Gabriele-Tergit-Promenade+21+(Eingang+%C3%BCber+K%C3%B6thenerstr),+10963+Berlijn+Duitsland@52.503735,13.375089"
     }
 ]
