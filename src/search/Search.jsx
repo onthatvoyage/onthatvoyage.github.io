@@ -1,5 +1,6 @@
 import Select from "react-select";
 import { useState, useEffect } from "react";
+import cafes from '../assets/cafes.json';
 
 function Search(){
    const [data, setData] = useState([]);
@@ -7,7 +8,7 @@ function Search(){
    const [options, setOptions] = useState([]);
 
    useEffect(() => {
-    fetch('./assets/cafes.json')
+    fetch(cafes)
       .then(response => response.json())
       .then(data => {
         setData(data);
