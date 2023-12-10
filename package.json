@@ -1,7 +1,7 @@
 {
   "name": "react-essentials-start",
   "version": "0.0.0",
-  "homepage": "https://ohthatvoyage.github.io/",
+  "homepage": "https://ohthatvoyage.github.io/ohthatvoyage.github.io",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
