@@ -8,20 +8,17 @@ function Search(){
    const [options, setOptions] = useState([]);
 
    useEffect(() => {
-    fetch(cafes)
-      .then(response => response.json())
-      .then(data => {
-        setData(data);
-        // Extract city names and remove duplicates
-        const uniqueCities = [...new Set(data.map(item => item.city))];
-        // Map to format required by react-select
-        const options = uniqueCities.map(city => ({
-          value: city,
-          label: city,
-        }));
-        setOptions(options);
-      });
-   }, []);
+    // Directly use the imported cafes data
+    const data = cafes;
+    // Extract city names and remove duplicates
+    const uniqueCities = [...new Set(data.map(item => item.city))];
+    // Map to format required by react-select
+    const options = uniqueCities.map(city => ({
+      value: city,
+      label: city,
+    }));
+    setOptions(options);
+ }, []);
    
 
    const handleChange = (selectedOption) => {
