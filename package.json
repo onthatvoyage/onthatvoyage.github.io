@@ -1,0 +1,29 @@
+{
+  "name": "react-essentials-start",
+  "version": "0.0.0",
+  "homepage": "https://ohthatvoyage.github.io/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "dev": "vite",
+    "build": "react-scripts build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
+    "axios": "^1.6.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-select": "^5.8.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.9"
+  },
+  "keywords": [],
+  "description": ""
+}

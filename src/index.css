@@ -1,0 +1,78 @@
+
+.card {
+  flex: unset;
+  width: 330px;
+  margin: 20px;
+  border-top: 2px #fffafa solid;
+  border-bottom: 2px #faf3f3 solid;
+  border-right: 2px #f8f4f4 solid;
+  border-left: 2px #fafafa solid;
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: local('Mabry Pro'), url(./fonts/MabryPro-Light.woff) format('woff');
+}
+
+html * {
+  color: #fcfcfc;
+  font-family: 'Mabry Pro', Arial, sans-serif;
+  background-color: rgb(28, 28, 28);
+ }
+ 
+
+.card-social {
+  color: #fcfcfc;
+  text-align: center;
+ }
+
+ .label {
+  color: white;
+ }
+ 
+ .value {
+  color: grey;
+ }
+ 
+ html {
+  box-sizing: border-box;
+ }
+ *, *:before, *:after {
+  box-sizing: inherit;
+ }
+ .inner {
+  max-width: 550px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+ }
+ 
+.address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 00px; /* row gap: 0, column gap: 20px */
+ }
+ 
+ .card-header {
+
+  text-align: center;
+  flex: unset;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px #ffffff solid;
+  padding: 20px; /* Adjust as needed */
+ }
+ 
+
+
+ 
+ .card-container {
+  color: #fcfcfc;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10rem;
+ }
+ 
