@@ -13,11 +13,14 @@
   display: inline-block;
  }
 
+
  .select {
+  background-color: 'grey';
   margin-left: auto;
   margin-right: auto;
-  width: 60%; /* Adjust as needed */
+  width: 50%; 
  }
+
  
 
 .social-item img {
@@ -69,7 +72,6 @@ html * {
  }
  
  .value {
-  
   color: white;
  }
  
