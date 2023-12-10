@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography } from '@mui/material';
 import cafes from '../assets/cafes.json';
-import map from './assets/map.png';
+import map from '../assets/map.png';
 
 const CardContainer = () => {
     return (
