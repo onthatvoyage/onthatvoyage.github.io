@@ -5,18 +5,15 @@ import Search from './search/Search';
  
 function App() {
   return (
-  
-<>
-<div className='search'>
-  <Search />
-
-</div>
-
-    <CardContainer />
-</>
-
-
-   
+    <>
+      <div className='search'>
+        <Search />
+      </div>
+      <CardContainer />
+      <div className='footer'>
+        Made in Berlin, with ❤️
+      </div>
+    </>
   );
  }
  
