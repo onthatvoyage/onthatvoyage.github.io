@@ -73,6 +73,11 @@ html * {
   color: white;
  }
  
+ .icon-small {
+  width: 20px;
+  height: 15px;
+ }
+
  html {
   box-sizing: border-box;
  }

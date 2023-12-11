@@ -3,29 +3,33 @@ import cafes from '../assets/cafes.json';
 import map from '../assets/map.png';
 import insta from '../assets/instagram.png';
 
-
-const CardContainer = () => {
-    return (
-        <div className="card-container">
-        {cafes.map((cafe, index) => (
-          <CafeCard 
-            key={index}
-            powerOutlets={cafe.powerOutlets} 
-            internetSpeed={cafe.internetSpeed} 
-            quietness={cafe.quietness} 
-            brightness={cafe.brightness} 
-            seating={cafe.seating} 
-            cafeName={cafe.cafeName}
-            city={cafe.city}
-            countryCode={cafe.countryCode}
-            maps={cafe.maps}
-            instagram={cafe.instagram}
-          />
-        ))}
-      </div>
-    );
-   };
-
+const CardContainer = ({selectedOption}) => {
+  console.log(selectedOption);
+  let filteredCafes = [];
+  if (selectedOption) {
+    filteredCafes = cafes.filter((cafe) => cafe.city === selectedOption.value);
+  }
+  console.log(selectedOption);
+  return (
+    <div className="card-container">
+    {filteredCafes.map((cafe, index) => (
+      <CafeCard 
+        key={index}
+        powerOutlets={cafe.powerOutlets} 
+        internetSpeed={cafe.internetSpeed} 
+        quietness={cafe.quietness} 
+        brightness={cafe.brightness} 
+        seating={cafe.seating} 
+        cafeName={cafe.cafeName}
+        city={cafe.city}
+        countryCode={cafe.countryCode}
+        maps={cafe.maps}
+        instagram={cafe.instagram}
+      />
+    ))}
+  </div>
+);
+};
    
    const CardHeader = ({ cafeName, city, countryCode, maps, instagram }) => {
       return (

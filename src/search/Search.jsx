@@ -7,31 +7,32 @@ const customStyles = {
   option: (provided, state) => ({
     ...provided,
     backgroundColor: state.isSelected ? 'grey' : 'grey',
-    color: 'white'
+ 
   }),
   control: (provided, state) => ({
     ...provided,
+    border: 0, 
+    boxShadow: 'none',
     color: 'black'
   })
  }
  
 
-const DropdownIndicator = (props) => {
+ const DropdownIndicator = (props) => {
   return (
     <components.DropdownIndicator {...props}>
-      <img src={filters} alt="filter icon" />
+      <img className="icon-small" src={filters} alt="filter icon" />
     </components.DropdownIndicator>
   );
  };
 
-function Search(){
-   const [data, setData] = useState([]);
-   const [selectedOption, setSelectedOption] = useState(null);
-   const [options, setOptions] = useState([]);
+function Search({onSelectedOptionChange}){
+  const [data, setData] = useState([]);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [options, setOptions] = useState([]);
 
-   
 
-   useEffect(() => {
+    useEffect(() => {
     // Directly use the imported cafes data
     const data = cafes;
     // Extract city names and remove duplicates
@@ -45,9 +46,11 @@ function Search(){
  }, []);
    
 
-   const handleChange = (selectedOption) => {
-       setSelectedOption(selectedOption);
-   }
+ const handleChange = (selectedOption) => {
+  setSelectedOption(selectedOption);
+  onSelectedOptionChange(selectedOption);
+}
+
 
    return(
        <div className="select" >
