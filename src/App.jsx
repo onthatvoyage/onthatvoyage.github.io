@@ -2,6 +2,7 @@ import React from 'react';
 import CardContainer from './Cards/card';
 import Search from './search/Search';
 import { useState } from "react";
+import twit from './assets/twitter.png';
 
 const Header = () => {
  return (
@@ -28,6 +29,11 @@ function App() {
      <CardContainer selectedOption={selectedOption} />
      <div className='footer'>
        Made in Berlin, with ❤️
+       <div className='twitter-footer'>
+          <a href="https://twitter.com/onthatvoyage" className='social-item-twitter'>
+          <img src={twit} alt="Twitter" />
+          </a>
+       </div>
      </div>
    </>
  );
