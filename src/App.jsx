@@ -3,6 +3,7 @@ import CardContainer from './Cards/card';
 import Search from './search/Search';
 import { useState } from "react";
 import twit from './assets/twitter.png';
+import backgroundImage from './assets/background.jpeg';
 
 const Header = () => {
  return (
@@ -21,12 +22,12 @@ function App() {
  };
 
  return (
-   <>
+     <>
      <Header />
      <div className='search'>
        <Search onSelectedOptionChange={handleSelectedOptionChange} />
      </div>
-     <CardContainer selectedOption={selectedOption} />
+     <CardContainer className='card-container-tag' selectedOption={selectedOption} />
      <div className='footer'>
        Made in Berlin, with ❤️
        <div className='twitter-footer'>
@@ -36,6 +37,8 @@ function App() {
        </div>
      </div>
    </>
+
+   
  );
 } 
 
