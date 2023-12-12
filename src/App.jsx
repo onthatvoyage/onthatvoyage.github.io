@@ -9,7 +9,6 @@ const Header = () => {
  return (
    <div>
      <h1 className="header">Find your optimal workplace in the city's cafes ☕</h1>
-     <p className="header-para">I'll be working from:</p>
    </div>
  );
 };
@@ -24,7 +23,7 @@ function App() {
  return (
      <>
      <Header />
-     <div className='search'>
+       <div className='search'>
        <Search onSelectedOptionChange={handleSelectedOptionChange} />
      </div>
      <CardContainer className='card-container-tag' selectedOption={selectedOption} />
