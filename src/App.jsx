@@ -4,7 +4,7 @@ import Search from './search/Search';
 import { useState } from "react";
 import twit from './assets/twitter.png';
 import backgroundImage from './assets/background.jpeg';
-import logo from './assets/onthatvoyage.jpg';
+import logo from './assets/onthatvoyage.png';
 
 const Header = () => {
  return (
