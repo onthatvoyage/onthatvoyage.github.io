@@ -58,6 +58,7 @@ function Search({onSelectedOptionChange}){
            onChange={handleChange}
            components={{ DropdownIndicator }}
            styles={customStyles}
+           placeholder="I will work"
            />
        </div>
    )
