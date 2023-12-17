@@ -6,14 +6,17 @@ import filters from '../assets/filter.png';
 const customStyles = {
   option: (provided, state) => ({
     ...provided,
-    backgroundColor: state.isSelected ? 'grey' : 'grey',
+    backgroundColor: state.isSelected ? '#F4CCCC' : '#FFFFFF',
+    color:state.isSelected ? 'black' : 'black',
  
   }),
   control: (provided, state) => ({
     ...provided,
     border: 0, 
     boxShadow: 'none',
-    color: 'black'
+    color: 'black',
+    backgroundColor:'#FFFFFF',
+    border:'1px solid black',
   })
  }
  
@@ -58,7 +61,7 @@ function Search({onSelectedOptionChange}){
            onChange={handleChange}
            components={{ DropdownIndicator }}
            styles={customStyles}
-           placeholder="I will work"
+           placeholder="I will work from"
            />
        </div>
    )

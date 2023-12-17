@@ -2,6 +2,7 @@ import { Card, CardContent, Typography } from '@mui/material';
 import cafes from '../assets/cafes.json';
 import map from '../assets/map.png';
 import insta from '../assets/instagram.png';
+import { Grid } from '@mui/material';
 
 const CardContainer = ({selectedOption}) => {
   console.log(selectedOption);
@@ -10,25 +11,27 @@ const CardContainer = ({selectedOption}) => {
     filteredCafes = cafes.filter((cafe) => cafe.city === selectedOption.value);
   }
   console.log(selectedOption);
-  return (
-    <div className="card-container">
-    {filteredCafes.map((cafe, index) => (
-      <CafeCard 
-        key={index}
-        powerOutlets={cafe.powerOutlets} 
-        internetSpeed={cafe.internetSpeed} 
-        quietness={cafe.quietness} 
-        brightness={cafe.brightness} 
-        seating={cafe.seating} 
-        cafeName={cafe.cafeName}
-        city={cafe.city}
-        countryCode={cafe.countryCode}
-        maps={cafe.maps}
-        instagram={cafe.instagram}
-      />
-    ))}
-  </div>
-);
+ return (
+   <Grid container spacing={2}>
+     {filteredCafes.map((cafe, index) => (
+       <Grid item xs={12} sm={6} md={2}>
+         <CafeCard 
+           key={index}
+           powerOutlets={cafe.powerOutlets} 
+           internetSpeed={cafe.internetSpeed} 
+           quietness={cafe.quietness} 
+           brightness={cafe.brightness} 
+           seating={cafe.seating} 
+           cafeName={cafe.cafeName}
+           city={cafe.city}
+           countryCode={cafe.countryCode}
+           maps={cafe.maps}
+           instagram={cafe.instagram}
+         />
+       </Grid>
+     ))}
+   </Grid>
+ );
 };
    
    const CardHeader = ({ cafeName, city, countryCode, maps, instagram }) => {
@@ -44,12 +47,19 @@ const CardContainer = ({selectedOption}) => {
             </p>
               </div> 
               <div className="card-social">
- <a href={maps} className="social-item maps">
+                <p>
+                <a href={maps} className="social-item maps">
  <img src={map} alt="Maps" />
 </a>
-<a href={instagram} className='social-item-insta'>
+
+                </p>
+                <p>
+                <a href={instagram} className='social-item-insta'>
   <img src={insta} alt="Instagram" />
 </a>
+                </p>
+
+
 </div>
 
           </div>
@@ -62,7 +72,8 @@ const CardContainer = ({selectedOption}) => {
 
 function CafeCard ({ powerOutlets, internetSpeed, quietness, brightness, seating, cafeName, city, countryCode, maps, instagram }){
     return (
-        <div className='card' style={{ color: 'white' }}>
+      <div className='card-details'>
+          <div className='card' >
             <Card className="cafe-card">
             <CardHeader cafeName={cafeName} city={city} countryCode={countryCode} maps={maps} instagram={instagram} />
           <CardContent>
@@ -89,6 +100,8 @@ function CafeCard ({ powerOutlets, internetSpeed, quietness, brightness, seating
         </CardContent>
       </Card>
             </div>
+      </div>
+        
     
     );
    };

@@ -1,15 +1,4 @@
 
-.card {
-  flex: unset;
-  width: 320px;
-  margin: 20px;
-  border-top: 2px #3d3d3d solid;
-  border-bottom: 2px #3d3d3d solid;
-  border-right: 2px #3d3d3d solid;
-  border-left: 2px #3d3d3d solid;
-}
-
-
 html, body {
   margin: 0;
   padding: 0;
@@ -23,24 +12,26 @@ html, body {
  .header {
   margin: 0;
   width: 100%;
+  border-bottom: thick double #000000;
+  writing-mode: horizontal-tb;
+  background-color: #272727;
   /* Add any additional styles for .header elements here */
  }
+
+ .heading-cafe {
+  margin-top: 90px;
+  position: relative;
+  text-align: center;
+ }
  
-
- .search {
-  margin-top: 50px; /* Adjust this value as needed */
+ .header-logo {
+  width: 90px;
+  height: auto;
  }
 
-.social-item, .social-item-insta {
-  display: inline-block;
- }
-
-
- .select {
-  background-color: 'grey';
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; 
+.search {
+  position: relative;
+  padding: 40px;
  }
 
 .social-item img {
@@ -54,38 +45,28 @@ html, body {
  }
 
  .card-social {
-  padding-left: 28px;
-  padding-right: 39px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 150px;
  }
+ 
  
  .social-item-insta {
   order: -1;
  }
 
- .social-item img, .social-item-insta img {
-  margin: 10px;
- }
- 
 @font-face {
   font-family: 'Mabry Pro';
   src: local('Mabry Pro'), url(./fonts/MabryPro-Light.woff) format('woff');
 }
 
 html * {
-  color: #fcfcfc;
+  color: #0e0e0e;
   font-family: 'Mabry Pro', Arial, sans-serif;
-  background-color: rgb(193, 190, 190);
+  
  }
  
-
-.card-social {
-  color: #fcfcfc;
-  text-align: center;
- }
-
  .label {
   color: rgb(6, 6, 6);
  }
@@ -102,9 +83,12 @@ html * {
  html {
   box-sizing: border-box;
  }
+ 
  *, *:before, *:after {
   box-sizing: inherit;
  }
+
+
  .inner {
   max-width: 550px;
   width: 90%;
@@ -122,7 +106,6 @@ html * {
  }
  
  .card-header {
-
   text-align: center;
   flex: unset;
   display: flex;
@@ -131,40 +114,29 @@ html * {
   padding: 20px; /* Adjust as needed */
  }
 
- .card-container {
-  color: #fcfcfc;
+ .card-details {
+   border-radius: 45px;
+ 
+ }
+
+ .card-container{
+  color: #802f2f;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 5rem;
- }
- 
-
- .footer {
-  text-align: center;
-  padding: 10px;
-  color: #4e4e4e;
-  background-color: rgb(193, 190, 190);
-
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
  }
 
- .header {
+ .footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  background-color: #272727;
+  color: rgb(250, 244, 244);
+  font-weight: bold;
   text-align: center;
-  color: #ffffff;
-  font-size: 25px;
-  background-color: rgb(32, 32, 32);
-  height: 90px;
-  padding-top: 15px;
-  padding-bottom: 50px;
-  padding-left: 15px;
-  padding-right: 15px;
- }
- 
- .header-para {
-  margin-top: -15px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 16px;
-  height: 90px;
+}
+
+.background-blue {
+  background-color: rgb(251, 185, 183);
  }
  
