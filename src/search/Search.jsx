@@ -13,10 +13,7 @@ const customStyles = {
   control: (provided, state) => ({
     ...provided,
     border: 0, 
-    boxShadow: 'none',
-    color: 'black',
-    backgroundColor:'#FFFFFF',
-    border:'1px solid black',
+    boxShadow: 'none'
   })
  }
  
