@@ -76,7 +76,8 @@ function CafeCard ({ powerOutlets, internetSpeed, quietness, brightness, seating
           <div className='card' >
             <Card className="cafe-card">
             <CardHeader cafeName={cafeName} city={city} countryCode={countryCode} maps={maps} instagram={instagram} />
-          <CardContent>
+            <div className='card-content-details'>
+            <CardContent>
           <Typography variant="body1" component="p">
             <span className="label">Power Outlets :</span>
             <span className="value">{powerOutlets}</span>
@@ -98,6 +99,9 @@ function CafeCard ({ powerOutlets, internetSpeed, quietness, brightness, seating
             <span className="value">{seating}</span>
           </Typography>
         </CardContent>
+
+            </div>
+         
       </Card>
             </div>
       </div>
